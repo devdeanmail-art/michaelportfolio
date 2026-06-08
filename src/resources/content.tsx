@@ -2,61 +2,40 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Logo, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Ruth",
-  lastName: "Sada Mwatelah",
-  name: `Ruth Sada Mwatelah`,
-  role: "Epidemiologist & Medical Microbiologist",
-  avatar: "/images/graduation.png",
-  email: "ruth.sada@hotmail.com",
-  location: "America/Toronto", // Changed to a valid IANA Time Zone
-  languages: ["English", "French", "Swahili"],
+  firstName: "Josphat",
+  lastName: "Mwatelah",
+  name: `Prof. Josphat K. Z. Mwatelah`,
+  role: "Associate Professor in Construction Engineering",
+  avatar: "/images/avatar.jpeg",
+  email: "",
+  location: "Africa/Nairobi", 
+  languages: ["English", "Swahili", "Japanese"],
 };
 
 const newsletter: Newsletter = {
-  display: true,
-  title: <>Subscribe to {person.firstName}'s Research Journal</>,
+  display: false,
+  title: <>Subscribe to {person.firstName}'s Updates</>,
   description: (
-    <>Weekly reflections on epidemiology, bioinformatics, and infectious disease research.</>
+    <>Updates on civil engineering and infrastructure research.</>
   ),
 };
 
-const social: Social = [
-  {
-    name: "LinkedIn",
-    icon: "linkedin",
-    link: "https://www.linkedin.com/in/ruth-sada-mwatelah/",
-  },
-  {
-    name: "Personal Email",
-    icon: "email",
-    link: `mailto:${person.email}`,
-  },
-  {
-    name: "Academic Email",
-    icon: "email",
-    link: "mailto:ruth.mwatelah@mcgill.ca",
-  },
-  {
-    name: "Phone",
-    icon: "phone",
-    link: "tel:+12042965432",
-  },
-];
+const social: Social = [];
 
 const home: Home = {
   path: "/",
   image: "/images/og/home.jpg",
   label: "Home",
   title: `${person.name}'s Portfolio`,
-  description: `The portfolio of ${person.name}, an epidemiologist and medical microbiologist based in Montreal, advancing infectious disease research and public health.`,
+  description: `The professional portfolio of ${person.name}, an Associate Professor in Construction Engineering and Geomantic Engineering.`,
   headline: (
     <>
       <img 
         src="/images/avatar.jpeg" 
-        alt="Ruth Sada Mwatelah - Public Health & Epidemiology" 
+        alt="Prof. Josphat K. Z. Mwatelah" 
         style={{ width: '100%', height: '280px', objectFit: 'cover', borderRadius: '16px', marginBottom: '24px', boxShadow: '0 4px 20px rgba(0,0,0,0.1)' }} 
       />
-      Advancing global health through data, epidemiology, and infectious disease research.
+      Advancing infrastructure, civil engineering, and capacity building.
     </>
   ),
   featured: {
@@ -70,12 +49,12 @@ const home: Home = {
         </Text>
       </Row>
     ),
-    href: "/work/endocervical-regulatory-t-cells",
+    href: "/work/mapping-water-quality",
   },
   subline: (
     <>
-      Hi, I’m Ruth — a Postdoctoral Researcher @ McGill University, currently investigating microbiome contributions to disease.
-      <br />I’m passionate about merging epidemiological data, bioinformatics, and clinical research to solve complex public health challenges.
+      Associate Professor in the School of Construction Engineering and Geomantic Engineering at JKUAT since 2007.
+      <br />Over 30 years of experience in engineering curriculum development, academic administration, and infrastructure project management.
     </>
   ),
 };
@@ -84,26 +63,21 @@ const about: About = {
   path: "/about",
   label: "About",
   title: `About – ${person.name}`,
-  description: `Learn about ${person.name}, a Montreal-based epidemiologist shaping the future of infectious disease research.`,
+  description: `Learn about ${person.name}, Associate Professor of Civil Engineering.`,
   tableOfContent: {
     display: true,
     subItems: false,
   },
   avatar: { display: true },
-  calendar: { display: true, link: "https://cal.com" },
+  calendar: { display: false, link: "" },
   intro: {
     display: true,
-    title: "Who I Am",
+    title: "Professional Profile",
     description: (
       <>
-        Dynamic epidemiologist and medical microbiologist with extensive experience in infectious disease research, epidemiological data analysis, and bioinformatics. Proven expertise in managing complex research projects, conducting advanced statistical analyses, and contributing to high-impact scientific publications. Adept at interdisciplinary collaboration, grant writing, and mentoring emerging researchers.
+        Associate Professor in the School of Construction Engineering and Geomantic Engineering at the Jomo Kenyatta University of Agriculture & Technology (JKUAT) since 2007.
         <br /><br />
-        <strong>Selected Publications:</strong>
-        <ul style={{ marginTop: '0.5rem', listStyleType: 'disc', paddingLeft: '1.25rem' }}>
-          <li>Mwatelah R., Knight J., Ma H., et al. <em>Developing a screening tool for undiagnosed HIV in MSM in Kenya.</em> (In preparation)</li>
-          <li>Mwatelah R., Mutua F., et al. <em>Non-Lactobacillus dominance is associated with decreased cervicovaginal cytokine receptor expression.</em> (Under review)</li>
-          <li>Ssemaganda A., Cholette F., Mwatelah R. <em>Endocervical regulatory T cells and genital inflammation.</em> Frontiers in Immunology, 2021.</li>
-        </ul>
+        Vast experience in engineering curriculum development, project supervision (undergraduate, Masters, Ph.D.), and editorial roles in both local and international engineering journals. Over 30 years of proficiency in the administrative duties of academic and governmental institutions, alongside teaching and supervising community development projects.
       </>
     ),
   },
@@ -112,58 +86,40 @@ const about: About = {
     title: "Experience",
     experiences: [
       {
-        company: "McGill University",
-        timeframe: "2024 – Present",
-        role: "Postdoctoral Researcher",
+        company: "Jomo Kenyatta University of Agriculture & Technology",
+        timeframe: "2007 – Present",
+        role: "Associate Professor",
         achievements: [
-          <>Conduct data cleaning, statistical modeling, and bioinformatics analysis for infectious disease studies.</>,
-          <>Develop mathematical models to predict microbiome contributions to HPV acquisition and persistence.</>,
-          <>Prepare manuscripts, presentations, and grant submissions while mentoring junior researchers.</>,
+          <>Preparation and dissemination of courses and processing of examinations.</>,
+          <>Supervision of Undergraduate, Graduate, and Postgraduate students.</>,
         ],
         images: [],
       },
       {
-        company: "University of Manitoba",
-        timeframe: "2017 – 2024",
-        role: "Ph.D. Researcher",
+        company: "Kilifi County Government",
+        timeframe: "2018 – 2022",
+        role: "County Executive Member for Roads, Transport and Public Works",
         achievements: [
-          <>Managed large epidemiological datasets using R and SPSS.</>,
-          <>Performed PCR, ELISA, sequencing, and tissue imaging for infectious disease studies.</>,
-          <>Conducted descriptive and inferential statistical analyses; developed bioinformatic workflows.</>,
-          <>Investigated immune correlates and host–pathogen interactions.</>,
+          <>Pursuant to Article 183 of the Constitution and Section 36 of the County Government Act, 2012.</>,
         ],
         images: [],
       },
       {
-        company: "Manitoba Centre for Health Policy",
-        timeframe: "2023 – 2024",
-        role: "Data Liaison",
+        company: "Technical University of Mombasa",
+        timeframe: "2013 – 2016",
+        role: "Vice Chancellor",
         achievements: [
-          <>Coordinated research projects focused on older adult care.</>,
-          <>Reviewed SAS code, developed data analysis plans, and supported stakeholders through approvals.</>,
-          <>Produced data presentations, visualizations, and manuscripts.</>,
+          <>Responsible for maintaining high-level academic standards, administration, and management of the institution.</>,
         ],
         images: [],
       },
       {
-        company: "Mishra Lab, St. Michael's Hospital",
-        timeframe: "2020 – 2021",
-        role: "Data Analyst Intern",
+        company: "African Institute for Capacity Development (AICAD)",
+        timeframe: "2000 – 2009",
+        role: "Deputy Executive Secretary & Director",
         achievements: [
-          <>Cleaned and analyzed HIV self-testing datasets for men who have sex with men in Kenya.</>,
-          <>Conducted clustering, regression modeling, and model validation.</>,
-        ],
-        images: [],
-      },
-      {
-        company: "Various Organizations",
-        timeframe: "2022 – Present",
-        role: "Volunteer & Committee Member",
-        achievements: [
-          <>Volunteer, Career Working Development Group, Canadian Black Scientist Network (2024 – Present).</>,
-          <>Abstract Reviewer, Canadian Cancer Research Conference (2025).</>,
-          <>Manuscript Reviewer, Pan African Medical Journal (2025 – Present) & Scientific Reports (2024 – Present).</>,
-          <>Internship/Lab Exchange Committee Member, Visual and Automated Disease Analytics (2022 – 2023).</>,
+          <>Management and conceptualization of the AICAD project.</>,
+          <>Coordinating research, training, and extension services in the African region.</>,
         ],
         images: [],
       },
@@ -174,71 +130,31 @@ const about: About = {
     title: "Education",
     institutions: [
       {
-        name: "Ph.D., Medical Microbiology & Infectious Diseases",
-        description: <>University of Manitoba, Canada (2024)</>,
+        name: "Doctor of Engineering",
+        description: <>Kyoto University, Japan (1995)</>,
       },
       {
-        name: "M.Sc., Epidemiology",
-        description: <>Jomo Kenyatta University of Agriculture & Technology, Kenya (2017)</>,
+        name: "Master of Science in Civil Engineering",
+        description: <>Tottori University, Japan (1988)</>,
       },
       {
-        name: "B.Sc., Medical Microbiology",
-        description: <>Jomo Kenyatta University of Agriculture & Technology, Kenya (2010)</>,
+        name: "B.Sc. (Hons.) in Surveying and Photogrammetry",
+        description: <>University of Nairobi, Kenya (1978)</>,
       },
     ],
   },
   technical: {
     display: true,
-    title: "Technical & Soft Skills",
+    title: "Professional Certifications",
     skills: [
       {
-        title: "Epidemiology & Data Analysis",
+        title: "Surveying & Engineering",
         description: (
           <>
-            Expertise in data management, statistical modeling, regression, clustering, longitudinal analysis, and data visualization using tools like R and SPSS.
+            Licensed Land Surveyor (Land Surveyors Board of Kenya), Full Member of the Institution of Surveyors of Kenya, and Associate Member of the American Society of Civil Engineers.
           </>
         ),
-        tags: [
-          { name: "R", icon: "code" },
-          { name: "SPSS", icon: "database" },
-          { name: "Modeling", icon: "python" },
-        ],
-      },
-      {
-        title: "Bioinformatics & Wet Lab",
-        description: (
-          <>
-            Proficient in PCR, ELISA, sequencing, tissue imaging, and comprehensive genomic data analysis to understand host-pathogen interactions.
-          </>
-        ),
-        tags: [
-          { name: "Bioinformatics", icon: "code" },
-          { name: "Genomics", icon: "database" },
-        ],
-      },
-      {
-        title: "Research & Project Management",
-        description: (
-          <>
-            Experienced in multidisciplinary coordination, grant writing, protocol development, and mentoring emerging researchers in the field.
-          </>
-        ),
-        tags: [
-          { name: "Management", icon: "team" },
-          { name: "Mentorship", icon: "lightbulb" },
-        ],
-      },
-      {
-        title: "Communication",
-        description: (
-          <>
-            Strong background in scientific writing, peer-reviewed publications, and conference presentations.
-          </>
-        ),
-        tags: [
-          { name: "Writing", icon: "edit" },
-          { name: "Presenting", icon: "mic" },
-        ],
+        tags: [],
       },
     ],
   },
@@ -246,27 +162,24 @@ const about: About = {
 
 const work: Work = {
   path: "/work",
-  label: "Research",
+  label: "Publications",
   title: `Publications & Research – ${person.name}`,
-  description: `A collection of impactful epidemiological research and publications by ${person.name}.`,
+  description: `A collection of impactful engineering research and publications by ${person.name}.`,
 };
 
 const blog: Blog = {
   path: "/blog",
   label: "Journal",
-  title: "Notes, Lessons & Reflections",
-  description: `Insights, research updates, and thoughts from ${person.name} on infectious diseases and epidemiology.`,
+  title: "Academic Notes & Reflections",
+  description: `Insights from ${person.name} on civil engineering, infrastructure, and academic leadership.`,
 };
 
 const gallery: Gallery = {
   path: "/gallery",
   label: "Gallery",
   title: `Photo Gallery – ${person.name}`,
-  description: `Snapshots of laboratory work, conferences, and community moments from ${person.name}'s journey.`,
-  images: [
-    { src: "/images/gallery/vertical-1.jpeg", alt: "work environment", orientation: "vertical" },
-    { src: "/images/gallery/horizontal-2.jpeg", alt: "project demo", orientation: "horizontal" },
-  ],
+  description: `Professional and academic journey of ${person.name}.`,
+  images: [],
 };
 
 export { person, social, newsletter, home, about, blog, work, gallery };
