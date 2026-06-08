@@ -50,7 +50,7 @@ const home: Home = {
         </Text>
       </Row>
     ),
-    href: "/work/uniformed-capabilities-management",
+    href: "/work",
   },
   subline: (
     <>
