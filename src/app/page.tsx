@@ -10,6 +10,7 @@ import {
   Schema,
   Meta,
   Line,
+  Carousel,
 } from "@once-ui-system/core";
 import { home, about, person, baseURL, routes } from "@/resources";
 import { Mailchimp } from "@/components";
@@ -65,6 +66,24 @@ export default function Home() {
               </Badge>
             </RevealFx>
           )}
+          <RevealFx translateY="4" fillWidth horizontal="center" paddingBottom="24">
+            <Carousel
+              sizes="(max-width: 960px) 100vw, 960px"
+              play={{ auto: true, interval: 3000 }}
+              style={{
+                perspective: "1000px",
+                transformStyle: "preserve-3d",
+                transform: "rotateY(0deg) rotateX(0deg) scale3d(1, 1, 1)"
+              }}
+              items={[
+                { slide: "/images/mik1.jpg", alt: "Peacekeeping operations" },
+                { slide: "/images/mike2.jpg", alt: "Mission support" },
+                { slide: "/images/mike3.jpg", alt: "Michael Mulinge Kitivi" },
+                { slide: "/images/mike5.jpeg", alt: "Michal Mulinge Kitivi" }
+
+              ]}
+            />
+          </RevealFx>
           <RevealFx translateY="4" fillWidth horizontal="center" paddingBottom="16">
             <Heading wrap="balance" variant="display-strong-l">
               {home.headline}

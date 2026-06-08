@@ -2,59 +2,60 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Logo, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Josphat",
-  lastName: "Mwatelah",
-  name: `Prof. Josphat K. Z. Mwatelah`,
-  role: "Associate Professor in Construction Engineering",
-  avatar: "/images/avatar.jpeg",
+  firstName: "Michael",
+  lastName: "Kitivi",
+  name: `Michael Mulinge Kitivi`,
+  role: "Director, Uniformed Capabilities Support Division at UNITED NATIONS",
+  avatar: "/images/m8pr.jpeg",
   email: "",
-  location: "Africa/Nairobi", 
-  languages: ["English", "Swahili", "Japanese"],
+  location: "America/New_York",
+  languages: ["English", "Swahili"],
 };
 
 const newsletter: Newsletter = {
   display: false,
   title: <>Subscribe to {person.firstName}'s Updates</>,
   description: (
-    <>Updates on civil engineering and infrastructure research.</>
+    <>Updates on global peacekeeping logistics and mission support.</>
   ),
 };
 
-const social: Social = [];
+const social: Social = [
+  {
+    name: "LinkedIn",
+    icon: "linkedin",
+    link: "https://www.linkedin.com/in/michael-mulinge-kitivi/",
+  }
+];
 
 const home: Home = {
   path: "/",
   image: "/images/og/home.jpg",
   label: "Home",
   title: `${person.name}'s Portfolio`,
-  description: `The professional portfolio of ${person.name}, an Associate Professor in Construction Engineering and Geomantic Engineering.`,
+  description: `The professional portfolio of ${person.name}, Director of the Uniformed Capabilities Support Division at the United Nations.`,
   headline: (
     <>
-      <img 
-        src="/images/avatar.jpeg" 
-        alt="Prof. Josphat K. Z. Mwatelah" 
-        style={{ width: '100%', height: '280px', objectFit: 'cover', borderRadius: '16px', marginBottom: '24px', boxShadow: '0 4px 20px rgba(0,0,0,0.1)' }} 
-      />
-      Advancing infrastructure, civil engineering, and capacity building.
+      Advancing global peacekeeping, logistics, and mission support at the United Nations.
     </>
   ),
   featured: {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Recent Publication</strong>{" "}
+        <strong className="ml-4">Recent Initiative</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
           Featured Work
         </Text>
       </Row>
     ),
-    href: "/work/mapping-water-quality",
+    href: "/work/uniformed-capabilities-management",
   },
   subline: (
     <>
-      Associate Professor in the School of Construction Engineering and Geomantic Engineering at JKUAT since 2007.
-      <br />Over 30 years of experience in engineering curriculum development, academic administration, and infrastructure project management.
+      Director of the Uniformed Capabilities Support Division at the United Nations, overseeing force generation and management.
+      <br />Proven track record in managing billion-dollar budgets and leading thousands of personnel in challenging peacekeeping operations.
     </>
   ),
 };
@@ -63,7 +64,7 @@ const about: About = {
   path: "/about",
   label: "About",
   title: `About – ${person.name}`,
-  description: `Learn about ${person.name}, Associate Professor of Civil Engineering.`,
+  description: `Learn about ${person.name}, Director at the UN.`,
   tableOfContent: {
     display: true,
     subItems: false,
@@ -75,9 +76,9 @@ const about: About = {
     title: "Professional Profile",
     description: (
       <>
-        Associate Professor in the School of Construction Engineering and Geomantic Engineering at the Jomo Kenyatta University of Agriculture & Technology (JKUAT) since 2007.
+        Dedicated and highly experienced leader currently serving as the Director of the Uniformed Capabilities Support Division (UCSD) at the United Nations Secretariat. 
         <br /><br />
-        Vast experience in engineering curriculum development, project supervision (undergraduate, Masters, Ph.D.), and editorial roles in both local and international engineering journals. Over 30 years of proficiency in the administrative duties of academic and governmental institutions, alongside teaching and supervising community development projects.
+        With extensive experience in mission support, logistics, and administration, I have overseen complex operations, including a $1.2 Billion annual budget and a 3,000-strong support division during the MINUSMA Peace Keeping Operation in Mali. My focus remains on improving the complex processes involved in force generation and capability management for global peace.
       </>
     ),
   },
@@ -86,75 +87,46 @@ const about: About = {
     title: "Experience",
     experiences: [
       {
-        company: "Jomo Kenyatta University of Agriculture & Technology",
-        timeframe: "2007 – Present",
-        role: "Associate Professor",
+        company: "United Nations",
+        timeframe: "Sep 2019 – Present",
+        role: "Director, Uniformed Capabilities Support Division",
         achievements: [
-          <>Preparation and dissemination of courses and processing of examinations.</>,
-          <>Supervision of Undergraduate, Graduate, and Postgraduate students.</>,
+          <>Leading the USCD to leverage the Department of Peace Operations for enhanced force generation and management.</>,
+          <>Overseeing the implementation of the Umoja UE2 Uniformed Capabilities Management system.</>,
+          <>Coordinating critical peacekeeper support initiatives, including landmark training for PTSD support.</>,
         ],
         images: [],
       },
       {
-        company: "Kilifi County Government",
-        timeframe: "2018 – 2022",
-        role: "County Executive Member for Roads, Transport and Public Works",
+        company: "MINUSMA, Peace Keeping Operation in Mali",
+        timeframe: "Feb 2016 – Aug 2019",
+        role: "Director, Mission Support",
         achievements: [
-          <>Pursuant to Article 183 of the Constitution and Section 36 of the County Government Act, 2012.</>,
+          <>In charge of Logistics and Administration in Bamako, Mali.</>,
+          <>Oversaw an annual operating budget of $1.2 Billion.</>,
+          <>Headed the Support Division comprising 3,000 employees in one of the UN's most challenging missions.</>,
         ],
         images: [],
-      },
-      {
-        company: "Technical University of Mombasa",
-        timeframe: "2013 – 2016",
-        role: "Vice Chancellor",
-        achievements: [
-          <>Responsible for maintaining high-level academic standards, administration, and management of the institution.</>,
-        ],
-        images: [],
-      },
-      {
-        company: "African Institute for Capacity Development (AICAD)",
-        timeframe: "2000 – 2009",
-        role: "Deputy Executive Secretary & Director",
-        achievements: [
-          <>Management and conceptualization of the AICAD project.</>,
-          <>Coordinating research, training, and extension services in the African region.</>,
-        ],
-        images: [],
-      },
+      }
     ],
   },
   studies: {
-    display: true,
+    display: false,
     title: "Education",
-    institutions: [
-      {
-        name: "Doctor of Engineering",
-        description: <>Kyoto University, Japan (1995)</>,
-      },
-      {
-        name: "Master of Science in Civil Engineering",
-        description: <>Tottori University, Japan (1988)</>,
-      },
-      {
-        name: "B.Sc. (Hons.) in Surveying and Photogrammetry",
-        description: <>University of Nairobi, Kenya (1978)</>,
-      },
-    ],
+    institutions: [],
   },
   technical: {
     display: true,
-    title: "Professional Certifications",
+    title: "Key Competencies",
     skills: [
       {
-        title: "Surveying & Engineering",
+        title: "Mission Support & Logistics",
         description: (
           <>
-            Licensed Land Surveyor (Land Surveyors Board of Kenya), Full Member of the Institution of Surveyors of Kenya, and Associate Member of the American Society of Civil Engineers.
+            Expertise in large-scale logistics, administration, budget management, and force generation for international peacekeeping operations.
           </>
         ),
-        tags: [],
+        tags: ["Logistics", "Budget Management", "Force Generation", "Administration", "Strategic Planning"],
       },
     ],
   },
@@ -162,23 +134,23 @@ const about: About = {
 
 const work: Work = {
   path: "/work",
-  label: "Publications",
-  title: `Publications & Research – ${person.name}`,
-  description: `A collection of impactful engineering research and publications by ${person.name}.`,
+  label: "Projects & Initiatives",
+  title: `Projects & Initiatives`,
+  description: `Key strategic initiatives and projects managed by ${person.name}.`,
 };
 
 const blog: Blog = {
   path: "/blog",
-  label: "Journal",
-  title: "Academic Notes & Reflections",
-  description: `Insights from ${person.name} on civil engineering, infrastructure, and academic leadership.`,
+  label: "Updates",
+  title: "News & Updates",
+  description: `Recent news and updates regarding ${person.name}'s work at the United Nations.`,
 };
 
 const gallery: Gallery = {
   path: "/gallery",
   label: "Gallery",
   title: `Photo Gallery – ${person.name}`,
-  description: `Professional and academic journey of ${person.name}.`,
+  description: `Professional journey and international visits of ${person.name}.`,
   images: [],
 };
 
