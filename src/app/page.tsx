@@ -69,7 +69,7 @@ export default function Home() {
           <RevealFx translateY="4" fillWidth horizontal="center" paddingBottom="24">
             <Carousel
               sizes="(max-width: 960px) 100vw, 960px"
-              play={{ auto: true, interval: 3000 }}
+              play={{ auto: true, interval: 6000 }}
               style={{
                 perspective: "1000px",
                 transformStyle: "preserve-3d",
